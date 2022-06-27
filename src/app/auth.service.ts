@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IUser } from './user';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ export class AuthService {
 
   constructor() { }
 
-  public login(userInfo:IUser){
+  public login(){
     localStorage.setItem('Access_Token',"access_token");
   }
 
